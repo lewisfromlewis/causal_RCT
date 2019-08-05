@@ -166,7 +166,7 @@ This design copes inherently with the concept of differential treatment effect b
 
 The technique is not to allow individuals or groups to appear as nodes unless group membership is truly thought to be the sole determining characteristic of responses to treatment and circumstances. Instead, the covariates in a model appear as nodes influencing various parts of the estimate, which translate directly to "group membership" only to the extent to which it is biologically relevant to the question at hand^[With the side effect of being un-racist. I had intended to draw up examples here but there is no pre-written software. Later.].
 
-```{r echo=FALSE, message=FALSE, fig.cap='Initial diagram. BP = blood pressure, ET = Endotoxin load, Gen = Genptype, Morb = Comorbidity, TC = RNA transcript under relevant physiological conditions, PC = RNA transcriptome principal component 1, '}
+```{r echo=FALSE, message=FALSE, fig.cap='Initial diagram. BP = blood pressure, ET = Endotoxin load, Gen = Genptype, Morb = Comorbidity, TC = RNA transcript under relevant physiological conditions, PC = RNA transcriptome principal component 1', out.width="4in"}
 #gb <- dagitty( "dag {
 #    BP -> Outcome ;
 #    Intervention -> BP;
@@ -182,5 +182,5 @@ The technique is not to allow individuals or groups to appear as nodes unless gr
 #    TC2 -> Outcome 
 #}")
 #plot(graphLayout(gb))
-#knitr::include_graphics("eg.png")
+knitr::include_graphics("eg.png", dpi=100 )
 ```
